@@ -1,0 +1,139 @@
+<HTML>
+
+<head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+	<div class="card">
+		<div class="card-header">
+			<h5 class="card-title">Welcome to Utility Application</h5>
+			<ul class="nav nav-tabs card-header-tabs" data-bs-tabs="tabs">
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="true" data-bs-toggle="tab" href="#mqms">MQ Message
+						Sender</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-bs-toggle="tab" href="#mqmr">MQ Message Reciever</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-bs-toggle="tab" href="#apims">API Message Sender</a>
+				</li>
+			</ul>
+		</div>
+		<div class="card-body tab-content">
+			<div class="tab-pane active" id="mqms">
+				<form class="card-text">
+					<div class="row">
+						<div class="col-md-12">
+							<label for="queuename" class="form-label">Queue name</label>
+							<input type="text" class="form-control" id="queuename" placeholder="Queue name"
+								aria-label="Queue name">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-9">
+							<label for="envname" class="form-label">Environment</label>
+							<select id="envname" class="form-select">
+								<option selected>DEV</option>
+								<option>...</option>
+							</select>
+						</div>
+						<div class="col-md-3">
+							<label for="rtime" class="form-label">Number for Repeat Request</label>
+							<input type="number" class="form-control" id="rtime" value="1" placeholder="Repeat Request"
+								aria-label="Repeat Request">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<label for="message" class="form-label">Input Message</label>
+							<input type="textarea" class="form-control" id="message" placeholder="Input Message"
+								aria-label="Input Message">
+						</div>
+					</div><hr>
+					<div class="row">
+						<div class="col-md-12">
+							<button type="submit" class="btn btn-primary">Submit Message</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="tab-pane" id="mqmr">
+				<form class="card-text">
+					<div class="row">
+						<div class="col-md-12">
+							<label for="queuename" class="form-label">Queue name</label>
+							<input type="text" class="form-control" id="queuename" placeholder="Queue name"
+								aria-label="Queue name">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-9">
+							<label for="envname" class="form-label">Environment</label>
+							<select id="envname" class="form-select">
+								<option selected>DEV</option>
+								<option>...</option>
+							</select>
+						</div>
+					</div><hr>
+					<div class="row">
+						<div class="col-md-12">
+							<button type="submit" class="btn btn-primary">Submit Message</button>
+						</div>
+					</div>
+				</form>
+					<div class="row">
+						<div class="col-md-12">
+							<input type="textarea" class="form-control" id="messageReceived" placeholder="Input Message"
+								aria-label="messageReceived">
+						</div>
+					</div>
+			</div>
+			<div class="tab-pane" id="apims">
+				<form class="card-text">
+					<div class="row">
+						<div class="col-md-12">
+							<label for="apiurl" class="form-label">API URL</label>
+							<input type="text" class="form-control" id="apiurl" placeholder="API URL"
+								aria-label="API URL">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-9">
+							<label for="envname" class="form-label">Environment</label>
+							<select id="envname" class="form-select">
+								<option selected>DEV</option>
+								<option>...</option>
+							</select>
+						</div>
+						<div class="col-md-3">
+							<label for="rtime" class="form-label">Number for Repeat Request</label>
+							<input type="number" class="form-control" id="rtime" value="1" placeholder="Repeat Request"
+								aria-label="Repeat Request">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<label for="message" class="form-label">Input Message</label>
+							<input type="textarea" class="form-control" id="message" placeholder="Input Message"
+								aria-label="Input Message">
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-md-12">
+							<button type="submit" class="btn btn-primary">Submit Message</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+
+</HTML>
